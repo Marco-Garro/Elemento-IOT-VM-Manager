@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "ad2714d6-fe2a-450b-b1fb-27386346d96f",
+		"name": "Elemento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26068962"
+	},
+	"item": [
+		{
+			"name": "WebInterfaceRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7103/VmManager",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"VmManager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VmDirectRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vm_name\": \"VM\",\r\n  \"slots\": 2,\r\n  \"overprovision\": 2,\r\n  \"allowSMT\": false,\r\n  \"archs\": [\"X86_64\"],\r\n  \"flags\": [\"sse2\"],\r\n  \"ramsize\": 2048,\r\n  \"reqECC\": false,\r\n  \"misc\": {\"os_family\": \"windows\", \"os_flavour\": \"windows10\"},\r\n  \"pci\": [\r\n      {\r\n          \"vendor\": \"10de\",\r\n          \"model\": \"24b0\",\r\n          \"quantity\": 1\r\n      },\r\n      {\r\n          \"vendor\": \"10de\",\r\n          \"model\": \"228b\",\r\n          \"quantity\": 1\r\n      }\r\n  ],\r\n  \"volumes\":[],\r\n  \"netdevs\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:17777/api/v1.0/client/vm/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17777",
+					"path": [
+						"api",
+						"v1.0",
+						"client",
+						"vm",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
