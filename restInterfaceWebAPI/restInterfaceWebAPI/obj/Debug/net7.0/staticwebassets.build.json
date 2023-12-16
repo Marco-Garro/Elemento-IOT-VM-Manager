@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "74U4iSx07G9rRCmqZP8gLjAGgQe59qs+agA5A93L/V4=",
+  "Source": "restInterfaceWebAPI",
+  "BasePath": "_content/restInterfaceWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
